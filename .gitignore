@@ -1,0 +1,359 @@
+# .gitignore for pgv_faiss C++ Project
+
+# Build directories and artifacts
+build/
+build-*/
+out/
+bin/
+lib/
+dist/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# Generated executables and libraries
+*.exe
+*.out
+*.app
+*.so
+*.so.*
+*.dylib
+*.dll
+*.a
+*.lib
+
+# Object files
+*.o
+*.obj
+*.ko
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# CLion
+.idea/
+cmake-build-*/
+
+# Qt Creator
+CMakeLists.txt.user*
+
+# Conan
+conandata.yml
+conanfile.txt
+conanbuildinfo.cmake
+conan.lock
+
+# vcpkg
+vcpkg_installed/
+
+# Test results and logs
+*.log
+*.tmp
+test_results.xml
+Testing/
+CTestTestfile.cmake
+
+# Benchmark and performance test results
+*benchmark_results*.csv
+*benchmark_results*.json
+*test_results*.txt
+*output*.log
+performance_*.txt
+timing_*.txt
+
+# Database files (if any local DB files)
+*.db
+*.sqlite
+*.sqlite3
+
+# Core dumps
+core
+core.*
+vgcore.*
+
+# Backup files
+*.bak
+*.orig
+*~
+.#*
+#*#
+
+# Editor temporary files
+*.swp
+*.swo
+.*.swp
+.*.swo
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Emacs
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Windows
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+
+# Package managers
+node_modules/
+bower_components/
+
+# Python (if any Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Documentation builds
+docs/_build/
+docs/build/
+site/
+
+# Coverage reports
+*.gcov
+*.gcno
+*.gcda
+lcov.info
+coverage.info
+
+# Profiling
+gmon.out
+callgrind.out.*
+cachegrind.out.*
+massif.out.*
+perf.data*
+
+# Valgrind
+vgcore.*
+*.memcheck
+
+# AddressSanitizer
+*.asan
+
+# ThreadSanitizer
+*.tsan
+
+# Fuzzing
+crash-*
+leak-*
+timeout-*
+slow-unit-*
+
+# Security and credentials
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+*.jks
+config.local.*
+.env
+.env.local
+.env.*.local
+
+# Project specific ignores
+pgv_faiss_benchmark_results.*
+test_vectors.txt
+sample_data.*
+vector_data.*
+
+# Temporary PostgreSQL files
+postgresql.conf.backup
+pg_hba.conf.backup
+
+# CUDA generated files (if GPU support enabled)
+*.cubin
+*.ptx
+*.fatbin
+
+# Generated documentation
+html/
+latex/
+man/
+rtf/
+
+# Dependency directories
+third_party/
+external/
+deps/
+
+# Package files
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# IDE project files
+*.cbp
+*.workspace
+*.layout
+*.depend
+
+# Clang tools
+.clang-format
+.clang-tidy
+.clangd/
+
+# Static analysis
+scan-build-*/
+cppcheck-report.*
+
+# Memory leak detection
+*.suppressions
+
+# Installation directories
+install/
+prefix/
+
+# Local configuration files
+config.local
+local.properties
+
+# Temporary directories
+tmp/
+temp/
+.tmp/
+
+# Auto-generated version files
+version.h
+version.cpp
+build_info.h
+
+# Package manager locks
+package-lock.json
+yarn.lock
+Cargo.lock
+
+# Editor/IDE specific
+.vimrc.local
+.lvimrc
+
+# OS X
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
