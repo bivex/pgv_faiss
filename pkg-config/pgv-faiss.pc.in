@@ -1,0 +1,12 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: PGVector-FAISS SDK
+Description: High-performance vector similarity search combining PostgreSQL pgvector with FAISS
+Version: @PROJECT_VERSION@
+URL: https://github.com/your-org/pgv-faiss
+Requires: libpq
+Libs: -L${libdir} -lpgv_faiss
+Cflags: -I${includedir}
