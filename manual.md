@@ -572,6 +572,7 @@ pgv_faiss/
 ├── build/                            # Build output directory
 ├── CMakeLists.txt                    # Main CMake configuration
 ├── .gitignore                        # Git ignore rules
+├── TODO.md                           # Development roadmap and incomplete features
 └── manual.md                         # This file
 ```
 

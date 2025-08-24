@@ -1,6 +1,12 @@
 #include "pgv_faiss.h"
 #include <iostream>
 
+// TODO: Add comprehensive database connection tests
+// TODO: Add tests for different PostgreSQL configurations
+// TODO: Add connection timeout and retry testing
+// TODO: Add database error handling verification
+// TODO: Add performance benchmarks for database operations
+
 int main() {
     std::cout << "=== Database Connection Test ===" << std::endl;
     
@@ -18,6 +24,13 @@ int main() {
     if (result == 0) {
         std::cout << "✅ Database connection successful!" << std::endl;
         std::cout << "✅ pgv_faiss library initialized properly!" << std::endl;
+        
+        // TODO: Add more comprehensive database tests:
+        // - Test vector insertion and retrieval
+        // - Test index creation and loading
+        // - Test concurrent database operations
+        // - Test database transaction handling
+        // - Test pgvector extension functionality
         
         pgv_faiss_destroy(index);
         std::cout << "✅ Cleanup completed" << std::endl;

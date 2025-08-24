@@ -2,6 +2,12 @@
 #include <iostream>
 #include <vector>
 
+// TODO: Add unit tests for all API functions
+// TODO: Add stress tests for memory management
+// TODO: Add tests for edge cases and error conditions
+// TODO: Add performance regression tests
+// TODO: Add thread safety tests for concurrent access
+
 int main() {
     std::cout << "=== PGV-FAISS Simple Library Test ===" << std::endl;
     

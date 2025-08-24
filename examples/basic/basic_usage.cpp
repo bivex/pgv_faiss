@@ -4,6 +4,13 @@
 #include <random>
 #include <chrono>
 
+// TODO: Add examples for different index types (HNSW, Flat)
+// TODO: Add error handling demonstrations
+// TODO: Add configuration validation examples
+// TODO: Add batch operations and performance comparisons
+// TODO: Add GPU vs CPU performance comparisons
+// TODO: Add memory usage monitoring and optimization examples
+
 void generate_random_vectors(std::vector<float>& vectors, std::vector<int64_t>& ids, 
                             int count, int dimension) {
     std::random_device rd;
@@ -105,6 +112,14 @@ int main() {
     } else {
         std::cout << "⚠ Index save failed (this is expected if DB is not available)" << std::endl;
     }
+    
+    // TODO: Add examples for:
+    // - Loading index from database
+    // - Index statistics and information
+    // - Vector update and deletion operations
+    // - Different distance metrics and search parameters
+    // - Batch search with multiple queries
+    // - Error recovery and connection retry scenarios
     
     pgv_faiss_free_result(&search_result);
     pgv_faiss_destroy(index);
