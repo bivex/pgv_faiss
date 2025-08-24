@@ -5,7 +5,6 @@ build/
 build-*/
 out/
 bin/
-lib/
 dist/
 
 # CMake generated files
